@@ -1,0 +1,269 @@
+/* =====================
+   RESET
+===================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0b1220;
+    overflow-x:hidden;
+    padding-top:60px;
+    color:#e5e7eb;
+}
+.container,
+.container-fluid{
+    padding-left:0 !important;
+    padding-right:0 !important;
+    margin-left:0 !important;
+    margin-right:0 !important;
+}
+
+.row{
+    margin-left:0 !important;
+    margin-right:0 !important;
+}
+
+.app-wrapper,
+.app-row{
+    width:100%;
+}
+
+/* =====================
+   NAVBAR
+===================== */
+.navbar{
+    height:60px;
+    z-index:1000;
+    border-bottom:1px solid #1f2937;
+    padding: 10px 20px;
+}
+/* PROFILE OFFCANVAS WIDTH CONTROL */
+.offcanvas.offcanvas-end{
+    width: 320px;   /* default is ~400px+ */
+}
+
+/* Optional: even smaller on mobile */
+@media (max-width: 425px){
+    .offcanvas.offcanvas-end{
+        width: 280px;
+    }
+}
+/* =====================
+   LAYOUT WRAPPER
+===================== */
+.app-wrapper,
+.app-row{
+    min-height:calc(100vh - 60px);
+}
+
+/* =====================
+   LEFT PANEL
+===================== */
+.left-panel{
+    background:linear-gradient(145deg, #0b1220, #0f172a);;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:80px 20px;
+    
+}
+
+/* FORM FIXED SIZE */
+.form-box{
+    width:100%;
+    max-width:420px;
+}
+
+/* INPUT STYLE */
+.form-control,
+.input-group-text{
+    border-radius:8px !important;
+}
+
+/* =====================
+   BUTTON ROW (ADD + SEARCH)
+===================== */
+.btn-row{
+    display:flex;
+    gap:10px;
+    width:100%;
+}
+
+.btn-row button{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:6px;
+}
+
+/* =====================
+   RIGHT PANEL
+===================== */
+.right-panel{
+    background:#0b1220;
+    padding:25px 10px;
+}
+
+/* SCROLL ONLY DESKTOP */
+@media (min-width:768px){
+    .right-panel{
+        height:calc(100vh - 60px);
+        overflow-y:auto;
+    }
+}
+
+/* =====================
+   LOADER
+===================== */
+.loader-box{
+    min-height:70vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    color:#e5e7eb;
+}
+
+.todo-loader{
+    width:55px;
+    height:55px;
+    border:5px solid #1f2937;
+    border-top:5px solid #22c55e;
+    border-radius:50%;
+    animation:spin 0.8s linear infinite;
+    margin-bottom:16px;
+}
+
+.loader-text{
+    color:#9ca3af;
+    font-size:1rem;
+    margin:0;
+}
+
+@keyframes spin{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+/* =====================
+   TASK CARD
+===================== */
+.task-card{
+    background:#111827;
+    border:1px solid #1f2937;
+    border-radius:14px;
+
+    padding:14px 16px;
+    margin-bottom:12px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    gap:12px;
+}
+
+/* TEXT */
+.task-info{
+    flex:1;
+    min-width:0;
+}
+
+.task-title{
+    font-size:1.05rem;
+    font-weight:600;
+    color:#f9fafb;
+    word-break:break-word;
+}
+
+.task-time{
+    font-size:0.9rem;
+    color:#9ca3af;
+    margin-top:4px;
+}
+
+/* =====================
+   ACTION BUTTONS
+===================== */
+.task-actions{
+    display:flex;
+    gap:8px;
+    justify-content:center;
+    align-items:center;
+}
+
+.task-actions button{
+    min-width:80px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* =====================
+   TABLET / MOBILE (<=767)
+===================== */
+@media (max-width:767px){
+
+    .task-card{
+        flex-direction:row;
+        align-items:center;
+    }
+
+    .task-actions{
+        justify-content:center;
+    }
+}
+
+/* =====================
+   SMALL MOBILE (<=500)
+===================== */
+@media (max-width:500px){
+
+    .task-card{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .task-info{
+        width:100%;
+    }
+
+    .task-actions{
+        width:100%;
+        justify-content:center;
+        flex-wrap:nowrap;
+    }
+
+    .task-actions button{
+        flex:1;
+        min-width:0;
+    }
+}
+
+/* =====================
+   VERY SMALL (<=310)
+===================== */
+@media (max-width:310px){
+
+    .btn-row{
+        flex-direction:column;
+    }
+
+    .task-actions{
+        flex-direction:column;
+        gap:6px;
+    }
+
+    .task-actions button{
+        width:100%;
+    }
+}

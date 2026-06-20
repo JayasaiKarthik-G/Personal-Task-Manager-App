@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Login | ToDo Today</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="public.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <div class="row auth-wrapper">
+
+            <!-- LEFT SIDE -->
+
+            <div
+                class="col-lg-6 d-flex align-items-center left-panel">
+
+                <div>
+
+                    <h1 class="mb-4">
+
+                        Welcome Back
+
+                    </h1>
+
+                    <p class="mb-4">
+
+                        Login to continue managing your
+                        daily tasks and stay productive.
+
+                    </p>
+
+                    <div class="info-box">
+
+                        <h5>
+
+                            <i class="fa-solid fa-user-check text-success"></i>
+
+                            Personal Dashboard
+
+                        </h5>
+
+                        <p class="mb-0">
+
+                            Access your private task list.
+
+                        </p>
+
+                    </div>
+
+                    <div class="info-box">
+
+                        <h5>
+
+                            <i class="fa-solid fa-list-check text-info"></i>
+
+                            Manage Tasks
+
+                        </h5>
+
+                        <p class="mb-0">
+
+                            Add, update and remove tasks easily.
+
+                        </p>
+
+                    </div>
+
+                    <div class="info-box">
+
+                        <h5>
+
+                            <i class="fa-solid fa-shield-halved text-warning"></i>
+
+                            Secure Login
+
+                        </h5>
+
+                        <p class="mb-0">
+
+                            Login using username or email.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT SIDE -->
+
+            <div
+                class="col-lg-6 d-flex align-items-center justify-content-center right-panel">
+
+                <div class="form-card w-100">
+
+                    <h2 class="form-title">
+
+                        Login
+
+                    </h2>
+
+                    <form
+                        id="loginForm"
+                        name="loginForm"
+                        autocomplete="off">
+
+                        <!-- USERNAME OR EMAIL -->
+
+                        <div class="input-group mb-3">
+
+                            <span class="input-group-text">
+
+                                <i class="fa-solid fa-user"></i>
+
+                            </span>
+
+                            <input
+                                type="text"
+                                id="emailOrUsername"
+                                name="emailOrUsername"
+                                class="form-control"
+                                placeholder="Username or Email">
+
+                        </div>
+
+                        <!-- PASSWORD -->
+
+                        <div class="input-group mb-4">
+
+                            <span class="input-group-text">
+
+                                <i class="fa-solid fa-lock"></i>
+
+                            </span>
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                class="form-control"
+                                placeholder="Password">
+
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="btn btn-success w-100 auth-btn">
+
+                            <i class="fa-solid fa-right-to-bracket"></i>
+
+                            Login
+
+                        </button>
+
+                    </form>
+
+                    <div class="text-center mt-4">
+
+                        Don't have an account?
+
+                        <a
+                            href="register.html"
+                            class="text-decoration-none">
+
+                            Register
+
+                        </a>
+
+                    </div>
+
+                    <div class="text-center mt-3">
+
+                        <a
+                            href="index.html"
+                            class="btn btn-outline-secondary">
+
+                            <i class="fa-solid fa-house"></i>
+
+                            Home
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="login.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

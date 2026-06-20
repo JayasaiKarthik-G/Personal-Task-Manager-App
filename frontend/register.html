@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Register | ToDo Today</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="public.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+
+    <div class="container-fluid">
+
+        <div class="row auth-wrapper">
+
+            <!-- LEFT SIDE -->
+
+            <div
+                class="col-lg-6 d-flex align-items-center left-panel">
+
+                <div>
+
+                    <h1 class="mb-4">
+
+                        Create Your Account
+
+                    </h1>
+
+                    <p class="mb-4">
+
+                        Join ToDo Today and manage your daily
+                        tasks securely from anywhere.
+
+                    </p>
+
+                    <div class="info-box">
+
+                        <h5>
+
+                            <i class="fa-solid fa-check text-success"></i>
+
+                            Personal Tasks
+
+                        </h5>
+
+                        <p class="mb-0">
+
+                            Every account has its own
+                            private task collection.
+
+                        </p>
+
+                    </div>
+
+                    <div class="info-box">
+
+                        <h5>
+
+                            <i class="fa-solid fa-lock text-warning"></i>
+
+                            Secure Access
+
+                        </h5>
+
+                        <p class="mb-0">
+
+                            Login safely with username
+                            or email.
+
+                        </p>
+
+                    </div>
+
+                    <div class="info-box">
+
+                        <h5>
+
+                            <i class="fa-solid fa-mobile-screen text-info"></i>
+
+                            Responsive Design
+
+                        </h5>
+
+                        <p class="mb-0">
+
+                            Works on mobile, tablet
+                            and desktop.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT SIDE -->
+
+            <div
+                class="col-lg-6 d-flex align-items-center justify-content-center right-panel">
+
+                <div class="form-card w-100">
+
+                    <h2 class="form-title">
+
+                        Register
+
+                    </h2>
+
+                    <form
+                        id="registerForm"
+                        name="regForm"
+                        autocomplete="off">
+
+                        <!-- FULL NAME -->
+
+                        <div class="input-group mb-2">
+
+                            <span class="input-group-text">
+
+                                <i class="fa-solid fa-user"></i>
+
+                            </span>
+
+                            <input
+                                type="text"
+                                id="fullName"
+                                name="fullName"
+                                class="form-control"
+                                placeholder="Full Name">
+
+                        </div>
+
+                        <!-- USERNAME -->
+
+                        <div class="input-group mb-2">
+
+                            <span class="input-group-text">
+
+                                <i class="fa-solid fa-at"></i>
+
+                            </span>
+
+                            <input
+                                type="text"
+                                id="username"
+                                name="username"
+                                class="form-control"
+                                placeholder="Username">
+
+                        </div>
+
+                        <!-- EMAIL -->
+
+                        <div class="input-group mb-2">
+
+                            <span class="input-group-text">
+
+                                <i class="fa-solid fa-envelope"></i>
+
+                            </span>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                class="form-control"
+                                placeholder="Email Address">
+
+                        </div>
+
+                        <!-- PASSWORD -->
+
+                        <div class="input-group mb-2">
+
+                            <span class="input-group-text">
+
+                                <i class="fa-solid fa-lock"></i>
+
+                            </span>
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                class="form-control"
+                                placeholder="Password">
+
+                        </div>
+
+                        <!-- CONFIRM PASSWORD -->
+
+                        <div class="input-group mb-2">
+
+                            <span class="input-group-text">
+
+                                <i class="fa-solid fa-shield"></i>
+
+                            </span>
+
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                name="confirmPassword"
+                                class="form-control"
+                                placeholder="Confirm Password">
+
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="btn btn-success w-100 auth-btn">
+
+                            <i class="fa-solid fa-user-plus"></i>
+
+                            Create Account
+
+                        </button>
+
+                    </form>
+
+                    <div class="text-center mt-3">
+
+                        Already have an account?
+
+                        <a
+                            href="login.html"
+                            class="text-decoration-none">
+
+                            Login
+
+                        </a>
+
+                    </div>
+
+                    <div class="text-center mt-2">
+
+                        <a
+                            href="index.html"
+                            class="btn btn-outline-secondary">
+
+                            <i class="fa-solid fa-house"></i>
+
+                            Home
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="register.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

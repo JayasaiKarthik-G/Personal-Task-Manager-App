@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo Today</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        html{
+            padding-top: 60px !important;
+        }
+    </style>
+    <link rel="stylesheet" href="public.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+        <div class="container">
+
+            <a href="index.html" class="navbar-brand d-flex align-items-center gap-2">
+
+                <i class="fa-solid fa-circle-check brand-icon"></i>
+
+                <span class="brand-text">
+                    ToDo Today
+                </span>
+
+            </a>
+
+            <button
+                class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                            <i class="fa-solid fa-house me-1"></i>
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">
+                            <i class="fa-solid fa-right-to-bracket me-1"></i>
+                            Login
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="register.html" class="nav-link">
+                            <i class="fa-solid fa-user-plus me-1"></i>
+                            Register
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="container">
+
+            <div class="row align-items-center gy-5">
+
+                <div class="col-lg-6">
+
+                    <h1 class="hero-title mb-4">
+                        Stay Organized Every Day
+                    </h1>
+
+                    <p class="hero-text mb-4">
+
+                        Manage your daily tasks efficiently.
+
+                        Create, update, delete and search tasks easily.
+
+                        Secure login, responsive design and fast performance.
+
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="login.html"
+                            class="btn btn-success btn-lg me-2">
+
+                            <i class="fa-solid fa-right-to-bracket"></i>
+
+                            Login
+
+                        </a>
+
+                        <a
+                            href="register.html"
+                            class="btn btn-outline-light btn-lg">
+
+                            <i class="fa-solid fa-user-plus"></i>
+
+                            Register
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 text-center">
+
+                    <i
+                        class="fa-solid fa-list-check"
+                        style="
+                            font-size:220px;
+                            color:#22c55e;
+                        ">
+                    </i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FEATURES -->
+
+    <section class="py-5">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <h2 class="fw-bold">
+                    Why Choose ToDo Today?
+                </h2>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-square-check"></i>
+                        </div>
+
+                        <div class="feature-title mb-2">
+                            Task Management
+                        </div>
+
+                        <div class="feature-text">
+
+                            Create, update and delete tasks whenever needed.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-user-shield"></i>
+                        </div>
+
+                        <div class="feature-title mb-2">
+                            Secure Account
+                        </div>
+
+                        <div class="feature-text">
+
+                            Every user has their own private task collection.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+
+                        <div class="feature-title mb-2">
+                            Fast Search
+                        </div>
+
+                        <div class="feature-text">
+
+                            Search tasks instantly using task or time.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+
+                        <div class="feature-title mb-2">
+                            Responsive
+                        </div>
+
+                        <div class="feature-text">
+
+                            Works perfectly on mobile, tablet and desktop.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+
+    <section class="py-5">
+
+        <div class="container">
+
+            <div class="row g-4 align-items-center">
+
+                <div class="col-lg-6">
+
+                    <h2 class="fw-bold mb-3">
+                        Manage Your Day Better
+                    </h2>
+
+                    <p class="hero-text">
+
+                        ToDo Today helps you organize daily activities with a
+                        clean interface and secure user accounts.
+
+                        Each user can manage personal tasks independently.
+
+                    </p>
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <div class="feature-card">
+
+                        <div class="mb-3">
+
+                            <i class="fa-solid fa-check text-success"></i>
+                            Add Tasks
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <i class="fa-solid fa-pen text-warning"></i>
+                            Update Tasks
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <i class="fa-solid fa-trash text-danger"></i>
+                            Delete Tasks
+
+                        </div>
+
+                        <div>
+
+                            <i class="fa-solid fa-clock text-info"></i>
+                            Manage Schedule
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="row gy-4">
+
+                <div class="col-md-6">
+
+                    <h4 class="footer-title">
+
+                        <i class="fa-solid fa-circle-check text-success"></i>
+
+                        ToDo Today
+
+                    </h4>
+
+                    <p class="footer-text mt-3">
+
+                        Manage your daily tasks efficiently and stay productive.
+
+                    </p>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <h5 class="footer-title">
+                        Quick Links
+                    </h5>
+
+                    <div class="d-flex flex-column gap-2">
+
+                        <a href="index.html" class="text-decoration-none text-light">
+                            Home
+                        </a>
+
+                        <a href="login.html" class="text-decoration-none text-light">
+                            Login
+                        </a>
+
+                        <a href="register.html" class="text-decoration-none text-light">
+                            Register
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <hr class="text-secondary">
+
+            <p class="text-center footer-text mb-0">
+
+                © 2026 ToDo Today. All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script>
+        let user = JSON.parse(localStorage.getItem("user"));
+        if(user){
+            window.location.replace("app.html");
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

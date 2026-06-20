@@ -1,0 +1,11 @@
+{
+  "name": "todo-today-backend",
+  "version": "1.0.0",
+  "description": "ToDo Today backend using json-server",
+  "scripts": {
+    "start": "json-server --watch db.json --host 0.0.0.0 --port 3000"
+  },
+  "dependencies": {
+    "json-server": "^0.17.4"
+  }
+}

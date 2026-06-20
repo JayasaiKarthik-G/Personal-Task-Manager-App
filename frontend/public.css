@@ -1,0 +1,235 @@
+/* ===== RESET ===== */
+
+html,
+body{
+    height: 100%;
+    background:#0f172a;
+    color:#f8fafc;
+    font-family:Segoe UI, sans-serif;
+    overflow-x: hidden;
+    
+}
+
+/* ===== NAVBAR ===== */
+
+.navbar{
+    border-bottom:1px solid #1e293b;
+}
+
+.brand-icon{
+    color:#22c55e;
+    font-size:1.6rem;
+}
+
+.brand-text{
+    font-size:1.2rem;
+    font-weight:700;
+    color:white;
+}
+
+.nav-link{
+    color:#cbd5e1 !important;
+    font-weight:500;
+}
+
+.nav-link:hover{
+    color:white !important;
+}
+
+/* ===== HERO ===== */
+
+.hero{
+    min-height:calc(100vh - 140px);
+    display:flex;
+    align-items:center;
+}
+
+.hero-title{
+    font-size:3rem;
+    font-weight:800;
+}
+
+.hero-text{
+    color:#94a3b8;
+    font-size:1.1rem;
+}
+
+.hero-buttons{
+    margin-top:25px;
+}
+
+/* ===== FEATURES ===== */
+
+.feature-card{
+    background:#111827;
+    border:1px solid #1f2937;
+    border-radius:16px;
+    padding:25px;
+    height:100%;
+    transition:0.3s;
+}
+
+.feature-card:hover{
+    transform:translateY(-5px);
+}
+
+.feature-icon{
+    font-size:2rem;
+    color:#22c55e;
+    margin-bottom:15px;
+}
+
+.feature-title{
+    font-size:1.1rem;
+    font-weight:700;
+}
+
+.feature-text{
+    color:#94a3b8;
+}
+
+/* ===== AUTH PAGES ===== */
+
+.auth-wrapper{
+    min-height: 100vh;
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
+}
+
+.left-panel{
+    min-height: 100vh;
+    background:#111827;
+    color:white;
+    padding:50px;
+}
+
+.left-panel h1{
+    font-size:2.5rem;
+    font-weight:800;
+}
+
+.left-panel p{
+    color:#94a3b8;
+}
+
+.info-box{
+    background:#0f172a;
+    border:1px solid #1e293b;
+    border-radius:14px;
+    padding:15px;
+    margin-top:15px;
+}
+
+.right-panel{
+    min-height: 100vh;
+    background:#f8fafc;
+    padding:30px 40px;
+    color:#0f172a;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden; /* IMPORTANT */
+}
+
+.form-card{
+    max-width:500px;
+    width:100%;
+    margin:auto;
+}
+
+.form-title{
+    text-align:center;
+    margin-bottom:25px;
+    font-weight:700;
+}
+
+.input-group-text{
+    background:#e2e8f0;
+}
+
+.form-control{
+    height:50px;
+}
+
+.auth-btn{
+    height:50px;
+    font-weight:600;
+}
+
+/* ===== FOOTER ===== */
+
+.footer{
+    background:#020617;
+    border-top:1px solid #1e293b;
+    padding:30px 0;
+}
+
+.footer-title{
+    font-weight:700;
+}
+
+.footer-text{
+    color:#94a3b8;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:768px){
+
+    .hero{
+        text-align:center;
+        padding:60px 0;
+    }
+
+    .auth-wrapper{
+        flex-direction: column;
+        overflow: auto;
+    }
+
+    .left-panel,
+    .right-panel{
+        min-height: auto;
+        width: 100%;
+        padding:30px;
+    }
+
+    .hero-title{
+        font-size:2.3rem;
+    }
+
+}
+
+@media(max-width:425px){
+
+    .hero-title{
+        font-size:2rem;
+    }
+
+    .left-panel h1{
+        font-size:2rem;
+    }
+}
+
+@media(max-width:375px){
+
+    .hero-title{
+        font-size:1.8rem;
+    }
+
+    .btn{
+        width:100%;
+        margin-bottom:10px;
+    }
+}
+
+@media(max-width:320px){
+
+    .hero-title{
+        font-size:1.6rem;
+    }
+
+    .brand-text{
+        font-size:1rem;
+    }
+}
